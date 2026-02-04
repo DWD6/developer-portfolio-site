@@ -1,47 +1,8 @@
-export type BlogPost = {
-  id: string;
-  title: string;
-  date: string; // 建议使用 ISO 字符串或 “YYYY-MM-DD”
-  tags: string[];
-  summary: string;
-  url?: string; // 可选：指向完整文章（例如 Notion、掘金、个人博客）
-};
-
-// 你可以在这里自由增删改文章，页面会自动更新。
-export const blogPosts: BlogPost[] = [
-  {
-    id: "learn-react-from-scratch",
-    title: "从零开始学习 React：组件思维与 Hooks 入门",
-    date: "2025-01-10",
-    tags: ["React", "Hooks", "前端入门"],
-    summary:
-      "记录我从类组件转向函数式组件 + Hooks 的学习过程，以及在实际项目中如何拆分组件、管理状态。",
-    url: "https://your-blog.com/learn-react-from-scratch",
-  },
-  {
-    id: "ts-best-practices",
-    title: "TypeScript 在前端项目中的最佳实践",
-    date: "2025-02-03",
-    tags: ["TypeScript", "类型系统"],
-    summary:
-      "分享在实际项目中使用 TypeScript 的经验，包括类型设计、常见坑以及如何渐进式引入。",
-    url: "https://your-blog.com/ts-best-practices",
-  },
-  {
-    id: "tailwind-dark-theme",
-    title: "用 Tailwind CSS 打造优雅的深色主题页面",
-    date: "2025-03-15",
-    tags: ["Tailwind CSS", "UI 设计", "Dark Mode"],
-    summary:
-      "介绍如何用 Tailwind 快速搭建深色主题页面，并通过渐变色和阴影提升视觉层次感。",
-    url: "https://your-blog.com/tailwind-dark-theme",
-  },
-];
-
+// src/data/blogPosts.ts 最终修复代码（保留新版，删除旧版重复内容）
 export type BlogPost = {
   slug: string;
   title: string;
-  date: string; // ISO 字符串或简单日期字符串
+  date: string; // ISO 字符串或简单日期字符串（如 "2026-02-01"）
   tags: string[];
   excerpt: string;
   content: string;
@@ -84,4 +45,3 @@ export const blogPosts: BlogPost[] = [
     ].join("\n"),
   },
 ];
-
